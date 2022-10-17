@@ -1,0 +1,11 @@
+version: "2"
+services:
+  app:
+    container_name: "app"
+    restart: always
+    build: .
+    environment:
+      - PORT=3001
+    ports:
+      - "3001:3001"
+    command: npm start
